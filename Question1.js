@@ -382,38 +382,34 @@ let ques = {
   // console.log(result);
 
 
+
+
   let demo = [0, 1];
-  // console.time('z');
-  let result = demo.map((el) => ques.surveyQuestions[el].questions.filter((x) => x.options).reduce((a,b) => {
-    // console.log('a', a);
-    a.push(...b.options);
-    // console.log("b", b);
-    return a;
-  },[])).reduce((a, b) => {
-    a.push(...b);
-    return a;
+  let result = demo.map((el) => ques.surveyQuestions[el].questions.filter((x) => x.options).reduce((previous, current) => {
+    previous.push(...current.options);
+    return previous;
+  },[])).reduce((previous, current) => {
+    previous.push(...current);
+    return previous;
   });
-  // console.timeEnd("z");
   console.log(result);
 
 
-  console.log("Shezan");
-  /*
+/*  
   let demo = [0, 1];
-  // console.time('z');
-  let result = demo.map((el) => qus.surveyQuestions[el].questions.filter((x) => x.options).reduce((a,b) => {
-    // console.log('a', a);
-    a.push(...b.options);
-    // console.log("b", b);
-    return a;
-  },[])).flatMap((a) => {
-    return a;
+  let result = demo.map((el) => ques.surveyQuestions[el].questions.filter((x) => x.options).reduce((previous, current) => {
+    previous.push(...current.options);
+    return previous;
+  },[])).flatMap((previous) => {
+    return previous;
   });
-  // console.timeEnd("z");
   console.log(result);
 */
 
-  
+
+
+
+
   
 
   // let array2 = [100, 200, 300, 400, 500]
@@ -463,3 +459,33 @@ let ques = {
 //     console.log(i);
 //   }
 // }
+
+// let demo = [0, 1];
+  // // console.time('z');
+  // let result = demo.map((el) => ques.surveyQuestions[el].questions.filter((x) => x.options).reduce((a,b) => {
+  //   // console.log('a', a);
+  //   a.push(...b.options);
+  //   // console.log("b", b);
+  //   return a;
+  // },[])).reduce((a, b) => {
+  //   a.push(...b);
+  //   return a;
+  // });
+  // // console.timeEnd("z");
+  // console.log(result);
+
+
+  /*
+  let demo = [0, 1];
+  // console.time('z');
+  let result = demo.map((el) => ques.surveyQuestions[el].questions.filter((x) => x.options).reduce((a,b) => {
+    // console.log('a', a);
+    a.push(...b.options);
+    // console.log("b", b);
+    return a;
+  },[])).flatMap((a) => {
+    return a;
+  });
+  // console.timeEnd("z");
+  console.log(result);
+*/
