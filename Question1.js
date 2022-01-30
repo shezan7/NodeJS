@@ -383,6 +383,14 @@ let ques = {
 
 
 
+// let demo = [0, 1];
+//   let result = demo.map((el) => ques.surveyQuestions[el].questions.filter((x) => x.options).reduce((previous, current) => {
+//     previous.push(...current.options);
+//     return previous;
+//   },[]))
+//   console.log(result);
+
+
 
   let demo = [0, 1];
   let result = demo.map((el) => ques.surveyQuestions[el].questions.filter((x) => x.options).reduce((previous, current) => {
@@ -392,6 +400,7 @@ let ques = {
     previous.push(...current);
     return previous;
   });
+
   console.log(result);
 
 
