@@ -14,7 +14,14 @@ const cars = [
 /**
  * print array elements using for loop
  * 
+ * declare arr1[], arr2[], arr3[]
+ * if wheels == 4, push it to arr1[]
+ * else if wheels == 2, push it to arr2[]
+ * else if wheels == 1, push it to arr3[]
  * 
+ * declare obj{}
+ * add three arrays into the object
+ * print obj
  */
 
 
@@ -30,7 +37,7 @@ const cars = [
      // console.log(cars[i]["wheels"]); 
      if(cars[i].wheels == 4) {
           // arr1.push(cars[i]);
-          obj.arr1.push(cars[i]);
+        obj.arr1.push(cars[i]);
       }
        else if(cars[i].wheels == 2) {
         // arr2.push(cars[i]);
