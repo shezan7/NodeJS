@@ -1,5 +1,11 @@
 let fs = require('fs')
 
-fs.unlink('text2-2.js', function(err) {
-    console.log('Deleted!');
+fs.unlink('text2-4.txt', function(err) {
+    if(err) {
+        console.log('got an error')
+    }
+    else {
+        console.log('Deleted')
+    }
+    //console.log('Deleted!');
 })

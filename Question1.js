@@ -400,7 +400,6 @@ let ques = {
     previous.push(...current);
     return previous;
   });
-
   console.log(result);
 
 
@@ -413,7 +412,7 @@ let ques = {
     return previous;
   });
   console.log(result);
-*/
+*/ 
 
 
 

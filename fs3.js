@@ -1,7 +1,14 @@
 let fs = require('fs')
 
-fs.appendFile('text2.js', 'I am the updated version', function(err) {
-    console.log('Update done');
+fs.appendFile('text2-3.txt', '\n I am the updated version', function(err) {
+    
+    if(err) {
+        console.log('got an error!')
+    }
+    else {
+         console.log('Update done');
+    }
+    //console.log('Update done');
 })
 
 
