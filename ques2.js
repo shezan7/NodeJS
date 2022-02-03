@@ -135,7 +135,7 @@ const cars = [
 
 
 let object = {}
-cars.map(a => { object[a.wheels] ? object[a.wheels].push({'name' : a.name, 'color' : a.color, 'isDamaged' : a.isDamaged}) : object[a.wheels] = [{'name' : a.name, 'color' : a.color, 'isDamaged' : a.isDamaged}]}) 
+cars.map(a => {object[a.wheels] ? object[a.wheels].push({'name' : a.name, 'color' : a.color, 'isDamaged' : a.isDamaged}) : object[a.wheels] = [{'name' : a.name, 'color' : a.color, 'isDamaged' : a.isDamaged}]}) 
 console.log(object)
 
 
