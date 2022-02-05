@@ -54,12 +54,3 @@ let ques = {
     // let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className.map(a => a.associatedDrug[0].name)
     // console.log(array)
 
-    let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.forEach(a => {
-        Object.values(a).forEach(b => { 
-            Object.values(b).forEach(c => { 
-                Object.values(c).forEach(d => {
-                    console.log(d[0].name);
-                })
-             })
-         })
-    })

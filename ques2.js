@@ -194,3 +194,14 @@ else if(cars.wheels==1) {
 
 console.log(obj);
 */
+
+
+    // let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.forEach(a => {
+    //     Object.values(a).forEach(b => { 
+    //         Object.values(b).forEach(c => { 
+    //             Object.values(c).forEach(d => {
+    //                 console.log(d[0].name);
+    //             })
+    //          })
+    //      })
+    // })
