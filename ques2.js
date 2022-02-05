@@ -205,3 +205,15 @@ console.log(obj);
     //          })
     //      })
     // })
+
+    //    let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.filter(a => {
+//         Object.values(a).filter(b => { 
+//             Object.values(b).filter(c => { 
+//                 Object.values(c).filter(d => {
+//                     // console.log(d[0].name);
+//                     Object.values(d)
+//                     console.log(d[0].name);
+//                 })
+//              })
+//          })
+//     })
