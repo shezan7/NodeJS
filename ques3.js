@@ -38,15 +38,28 @@ let ques = {
 
 
 
-    let array1 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name
-    let array2 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0]["associatedDrug#2"][0].name
-    let array3 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0].associatedDrug[0].name
-    let array4 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0]["associatedDrug#2"][0].name
+    // let array1 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name
+    // let array2 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0]["associatedDrug#2"][0].name
+    // let array3 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0].associatedDrug[0].name
+    // let array4 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0]["associatedDrug#2"][0].name
 
-    console.log(array1);
-    console.log(array2);
-    console.log(array3);
-    console.log(array4);
+    // console.log(array1)
+    // console.log(array2)
+    // console.log(array3)
+    // console.log(array4)
 
     
-    
+
+    // let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.map(a => a.className[0].associatedDrug[0].name)
+    // let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className.map(a => a.associatedDrug[0].name)
+    // console.log(array)
+
+    let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.forEach(a => {
+        Object.values(a).forEach(b => { 
+            Object.values(b).forEach(c => { 
+                Object.values(c).forEach(d => {
+                    console.log(d[0].name);
+                })
+             })
+         })
+    })
