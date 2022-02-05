@@ -50,19 +50,18 @@ let ques = {
 
     
 
-     let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.map(a => a.className[0].associatedDrug[0].name)
+    // let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.map(a => a.className[0].associatedDrug[0].name)
     // let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className.map(a => a.associatedDrug[0].name)
-     console.log(array)
+    // console.log(array)
 
 
-    //    let array = ques.problems[0].Diabetes[0].medications[0].medicationsClasses.filter(a => {
-//         Object.values(a).filter(b => { 
-//             Object.values(b).filter(c => { 
-//                 Object.values(c).filter(d => {
-//                     // console.log(d[0].name);
-//                     Object.values(d)
-//                     console.log(d[0].name);
-//                 })
-//              })
-//          })
-//     })
+    ques.problems[0].Diabetes[0].medications[0].medicationsClasses.filter(a => {
+        Object.values(a).filter(b => { 
+            Object.values(b).filter(c => { 
+                Object.values(c).filter(d => {
+                    Object.values(d)
+                    console.log(d[0].name);
+                })
+             })
+         })
+    })
