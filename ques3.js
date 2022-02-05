@@ -38,12 +38,15 @@ let ques = {
 
 
 
-    let array1 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name;
-    let array2 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className.associatedDrug;
+    let array1 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name
+    let array2 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0]["associatedDrug#2"][0].name
+    let array3 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0].associatedDrug[0].name
+    let array4 = ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0]["associatedDrug#2"][0].name
 
     console.log(array1);
     console.log(array2);
-    
-    // ques.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name
+    console.log(array3);
+    console.log(array4);
 
-    // console.log(ques);
+    
+    
